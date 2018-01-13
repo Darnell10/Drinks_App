@@ -1,29 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayoutLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="c4q.com.drinks_app.MainActivity">
+    android:background="@drawable/champagnepop"
 
-    <ImageView
-        android:id="@+id/drink_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+  tools:context="c4q.com.drinks_app.MainActivity">
+
 
     <TextView
-        android:id="@+id/drink_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/glass_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="What Do You Want To Drink Baby ?"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:hint="Enter here"
+        android:background="#FFFFFF"
         />
 
 
+    <Button
+        ali
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="44dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Serve Me Boo"
+        android:textColor="#FFFFFF" />
 
 
 
@@ -31,4 +51,8 @@
 
 
 
-</LinearLayoutLayout>
+
+
+
+
+</RelativeLayout>
