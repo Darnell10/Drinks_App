@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         //TODO Add recyclerView
 
+
     }
 
     public void drinkAPI() {
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         DrinkService drinkService = retrofit.create(DrinkService.class);
 
         final Call<Cocktail> cocktailCall = drinkService.getDrink("s");
+
+        //TODO add Picasso or Glide whatever.
 
         cocktailCall.enqueue(new Callback<Cocktail>() {
             @Override
