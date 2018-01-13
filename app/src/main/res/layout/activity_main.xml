@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayoutLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -7,31 +7,53 @@
     android:layout_height="match_parent"
     tools:context="c4q.com.drinks_app.MainActivity">
 
+
+    <!-- This is just an idea of how the ui could be.
+    we could also have just an image of the drink come up with  search and make it clickable
+    to show details after being clicked-->
+
     <ImageView
         android:id="@+id/drink_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_weight="3"/>
 
     <TextView
         android:id="@+id/drink_name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="@string/drink"/>
+
+    <TextView
+        android:id="@+id/drink_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="@string/type"/>
+
 
     <TextView
         android:id="@+id/glass_type"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="glass"/>
 
     <TextView
         android:id="@+id/ing1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="ingredients"/>
 
 
     <TextView
         android:id="@+id/measure"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="measurements"
         />
 
 
@@ -42,4 +64,4 @@
 
 
 
-</LinearLayoutLayout>
+</LinearLayout>

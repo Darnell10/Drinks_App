@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Drinks_App</string>
+    <string name="drink">drink</string>
+    <string name="type">drink type</string>
 </resources>
