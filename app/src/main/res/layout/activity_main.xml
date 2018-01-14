@@ -6,9 +6,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/champagnepop"
-
-  tools:context="c4q.com.drinks_app.MainActivity">
+    android:background="@drawable/chap"
+    tools:context="c4q.com.drinks_app.MainActivity">
 
 
     <TextView
@@ -34,7 +33,7 @@
 
 
     <Button
-        ali
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
