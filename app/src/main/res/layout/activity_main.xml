@@ -1,62 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/chap"
     tools:context="c4q.com.drinks_app.MainActivity">
+
 
 
     <!-- This is just an idea of how the ui could be.
     we could also have just an image of the drink come up with  search and make it clickable
     to show details after being clicked-->
 
-    <ImageView
-        android:id="@+id/drink_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="3"/>
-
     <TextView
-        android:id="@+id/drink_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        android:text="@string/drink"/>
+        android:text="What Do You Want To Drink Baby ?"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:id="@+id/textView" />
 
-    <TextView
-        android:id="@+id/drink_type"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        android:text="@string/type"/>
-
-
-    <TextView
-        android:id="@+id/glass_type"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        android:text="glass"/>
-
-    <TextView
-        android:id="@+id/ing1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        android:text="ingredients"/>
-
-
-    <TextView
-        android:id="@+id/measure"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.5"
-        android:text="measurements"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:hint="Enter here"
+        android:background="#FFFFFF"
         />
 
 
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="44dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Serve Me Boo"
+        android:textColor="#FFFFFF" />
 
 
 
@@ -64,4 +55,10 @@
 
 
 
-</LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+
