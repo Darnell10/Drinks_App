@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,13 +11,17 @@
     tools:context="c4q.com.drinks_app.MainActivity">
 
 
+
+    <!-- This is just an idea of how the ui could be.
+    we could also have just an image of the drink come up with  search and make it clickable
+    to show details after being clicked-->
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="What Do You Want To Drink Baby ?"
         android:textColor="#FFFFFF"
         android:textAlignment="center"
-
         android:id="@+id/textView" />
 
     <EditText
@@ -54,4 +59,6 @@
 
 
 
+
 </RelativeLayout>
+
