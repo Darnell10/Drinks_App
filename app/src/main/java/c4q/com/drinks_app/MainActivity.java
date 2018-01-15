@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
 
         final Call<Cocktail> cocktailCall = drinkService.getDrink("s");
 
-        //TODO add Picasso or Glide whatever.
 
         cocktailCall.enqueue(new Callback<Cocktail>() {
             @Override
@@ -46,14 +45,12 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("response: ", response.body().toString());
 
             }
-
             @Override
             public void onFailure(Call<Cocktail> call, Throwable t) {
-                Log.d(TAG, "Wheres My DrinK?" + toString());
+                Log.d(TAG, "Wheres My Drink?" + toString());
                 t.printStackTrace();
             }
         });
-
 
     }
     }

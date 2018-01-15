@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="10dp"
+        card_view:cardCornerRadius= "10dp"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/drink_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/drink_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_toEndOf="@+id/drink_image"
+                android:text="Drink name" />
+
+            <TextView
+                android:id="@+id/drink_glass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/drink_name"
+                android:layout_centerVertical="true"
+                android:text="Glass" />
+
+            <TextView
+                android:id="@+id/ingredient_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:text="ingredient 1" />
+
+            <TextView
+                android:id="@+id/ingredient_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/ingredient_one"
+                android:layout_below="@+id/ingredient_one"
+                android:text="ingredient 2"/>
+
+            <TextView
+                android:id="@+id/ingredient_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ingredient_two"
+                android:layout_below="@+id/ingredient_two"
+                android:text="ingredient 3" />
+
+            <TextView
+                android:id="@+id/ingredient_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/ingredient_three"
+                android:text="ingredient 4" />
+            <TextView
+                android:id="@+id/ingredient_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/ingredient_four"
+                android:text="ingredient 5" />
+            <TextView
+                android:id="@+id/ingredient_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/ingredient_five"
+                android:text="ingredient 6" />
+
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
