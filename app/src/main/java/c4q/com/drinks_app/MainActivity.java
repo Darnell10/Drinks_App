@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import android.util.Log;
 
+import c4q.com.drinks_app.model.Cocktail;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -20,38 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        drinkAPI();
-
-        //TODO Add recyclerView
-
-
+        //TODO: Change Retrofit locations (Maybe make a singleton retrofit class)
     }
 
-    public void drinkAPI() {
-        //http://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://www.thecocktaildb.com")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        DrinkService drinkService = retrofit.create(DrinkService.class);
-
-        final Call<Cocktail> cocktailCall = drinkService.getDrink("s");
-
-
-        cocktailCall.enqueue(new Callback<Cocktail>() {
-            @Override
-            public void onResponse(Call<Cocktail> call, Response<Cocktail> response) {
-                Log.d("response: ", response.body().toString());
-
-            }
-            @Override
-            public void onFailure(Call<Cocktail> call, Throwable t) {
-                Log.d(TAG, "Wheres My Drink?" + toString());
-                t.printStackTrace();
-            }
-        });
-
-    }
     }
 

@@ -1,5 +1,6 @@
 package c4q.com.drinks_app;
 
+import c4q.com.drinks_app.model.Cocktail;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
