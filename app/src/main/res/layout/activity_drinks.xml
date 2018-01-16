@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="c4q.com.drinks_app.DrinksList">
+    tools:context="c4q.com.drinks_app.DrinksActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/drinks_recycler"

@@ -27,7 +27,6 @@ public class Cocktail {
             return this.strGlass;
         }
 
-
         private String strInstructions;
 
         public String getStrInstructions() {
