@@ -29,11 +29,6 @@ public class DrinksActivity extends AppCompatActivity {
         setContentView(R.layout.activity_drinks);
 
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-            }
-        }, 5000);
 
         drinkAPI();
 
@@ -50,22 +45,22 @@ public class DrinksActivity extends AppCompatActivity {
                 .build();
         DrinkService drinkService = retrofit.create(DrinkService.class);
 
-        final Call<Cocktail> cocktailCall = drinkService.getDrink("margarita");
+        final Call<Cocktail> cocktailCall = drinkService.getDrink("1","margarita");
         Log.d(TAG, "drinkAPI: " + cocktailCall.request());
 
 
         cocktailCall.enqueue(new Callback<Cocktail>() {
             @Override
             public void onResponse(Call<Cocktail> call, Response<Cocktail> response) {
-                Log.d("response: ", response.body().toString());
-                cocktails = response.body();
-                ArrayList<Cocktail.Drink> drinksList = response.body().getDrinks();
-                for (Cocktail.Drink s : drinksList){
-                    Log.d(TAG, "onResponse: "+ s.getStrDrink());
+                if(response.body().getDrinks() == null){
+                    //TODO show alert dialog telling user there is no drink(s)
+                } else {
+                    ArrayList<Cocktail.Drink> drinksList = response.body().getDrinks();
+                    for (Cocktail.Drink s : drinksList){
+                        Log.d(TAG, "onResponse: "+ s.getStrDrink());
+                    }
+                    initRecycler(drinksList);
                 }
-
-                initRecycler(drinksList);
-
 
             }
             @Override
