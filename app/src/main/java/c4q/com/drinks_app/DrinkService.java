@@ -1,7 +1,9 @@
 package c4q.com.drinks_app;
 
+import c4q.com.drinks_app.model.Cocktail;
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 /**
@@ -10,11 +12,10 @@ import retrofit2.http.Query;
 
 public interface DrinkService {
 
-    //TODO WAITING FOR FULL API KEY. SENT REQUEST.
 
     String API_KEY = "1";
 
-    @GET("api/json/v1/1/search.php")
-    Call<Cocktail> getDrink(@Query("s") String s);
+    @GET("{api_key}/search.php")
+    Call<Cocktail> getDrink(@Path("api_key") String api_key,@Query("s") String s);
 
 }
