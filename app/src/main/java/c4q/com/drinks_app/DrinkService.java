@@ -11,11 +11,10 @@ import retrofit2.http.Query;
 
 public interface DrinkService {
 
-    //TODO WAITING FOR FULL API KEY. SENT REQUEST.
 
     String API_KEY = "1";
 
-    @GET("api/json/v1/1/search.php")
+    @GET("1/search.php")
     Call<Cocktail> getDrink(@Query("s") String s);
 
 }

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import c4q.com.drinks_app.R;
@@ -18,9 +19,9 @@ import c4q.com.drinks_app.views.Cocktail_ViewHolder;
 public class CocktailAdapter extends RecyclerView.Adapter<Cocktail_ViewHolder> {
 
     private static final String TAG = "HELP!!";
-    public List<Cocktail.Drink> drinksList;
+    public ArrayList<Cocktail.Drink> drinksList;
 
-    public CocktailAdapter(List<Cocktail.Drink> drinksList){
+    public CocktailAdapter(ArrayList<Cocktail.Drink> drinksList){
         this.drinksList = drinksList;
     }
 
@@ -40,6 +41,6 @@ public class CocktailAdapter extends RecyclerView.Adapter<Cocktail_ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return 0;
+        return drinksList.size();
     }
 }

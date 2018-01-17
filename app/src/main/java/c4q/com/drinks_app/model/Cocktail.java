@@ -8,10 +8,10 @@ import java.util.ArrayList;
 
 public class Cocktail {
 
-    private ArrayList<Drink> drinks;
+    private ArrayList<Cocktail.Drink> drinks = new ArrayList<>();
 
-    public ArrayList<Drink> getDrinks() {
-        return this.drinks;
+    public ArrayList<Cocktail.Drink> getDrinks() {
+        return drinks;
     }
 
     public class Drink {
